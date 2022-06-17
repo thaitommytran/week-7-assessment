@@ -1,0 +1,23 @@
+Results for the tinyArray
+insert 37.3 μs
+append 80.8 μs
+
+Results for the smallArray
+insert 47.9 μs
+append 101.6 μs
+
+Results for the mediumArray
+insert 176.6 μs
+append 134.6 μs
+
+Results for the largeArray
+insert 8.5115 ms
+append 491.4 μs
+
+Results for the extraLargeArray
+insert 975.2095 ms
+append 2.9545 ms
+
+
+
+From the results, it seems as though the doublerInsert function performs faster with smaller sized arrays. As the size of the array increases, the doublerAppend function will outperform the doublerInsert function. The Array.prototype.push() method scales linearly, while the Array.prototype.unshift() method scales quadratically. Overall, the doublerAppend scales better because its runtime is faster as the size of the input array becomes increasingly larger.
